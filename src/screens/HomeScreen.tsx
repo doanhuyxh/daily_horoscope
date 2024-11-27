@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 2,
     backgroundColor: ThemeColor.primaryColorOpacity,
-    transform: [{translateY: -2}],
+    transform: [{translateY: -3}],
   },
   bannerContainer: {
     position: 'relative',
@@ -245,11 +245,13 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     flexDirection: 'row',
     justifyContent: 'space-around',
+    alignItems:"center"
   },
   navigationText: {
     fontSize: 24,
     color: ThemeColor.primaryColor,
     fontStyle: 'italic',
+    fontFamily:"RockSalt-Regular"
   },
 });
 

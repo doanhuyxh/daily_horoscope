@@ -9,11 +9,10 @@ function CirclePercent({ percent, text }: { percent: number; text: string }) {
         <AnimatedCircularProgress
           size={75}
           width={10}
-          fill={percent}
-          rotation={180}
-          tintColor={ThemeColor.primaryColor}
-          onAnimationComplete={() => console.log('onAnimationComplete')}
-          backgroundColor={ThemeColor.primaryColorOpacity}
+          fill={100-percent}
+          rotation={360}
+          tintColor={'rgba(255, 255, 255, 0.5)'} 
+          backgroundColor={ThemeColor.primaryColor}
         />
         <View style={styles.percentTextContainer}>
           <Text style={styles.percentText}>{`${percent}%`}</Text>
@@ -47,7 +46,7 @@ const styles = StyleSheet.create({
   percentText: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: ThemeColor.primaryColor,
+    color: "#000",
   },
   textContent: {
 

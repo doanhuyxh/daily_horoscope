@@ -17,7 +17,7 @@ import ThemeColor from '../configs/color';
 
 function HomeScreen() {
   const tabs = ['Yesterday', 'Today', 'Tomorrow', 'Weekly'];
-  const names = 'Amee Tran <3';
+  const names = 'Đinh Trần Nguyễn Phương Nam';
   const textSolo = ['WORK', 'LOVE', 'HEALTH'];
 
   const textNotify = [
@@ -85,7 +85,7 @@ function HomeScreen() {
             <Image source={avatar} style={styles.avatar} />
             <Text style={styles.nameText}>{names}</Text>
             <TouchableOpacity style={styles.btnZodiacText}>
-              <Text style={styles.zodiacText}>Virgo</Text>
+              <Text style={styles.zodiacText}>Sagittarius</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   bannerContainer: {
     position: 'relative',
-    height: 260,
+    height: 250,
     width: '100%',
   },
   bannerImage: {
@@ -185,9 +185,12 @@ const styles = StyleSheet.create({
     color: ThemeColor.primaryColor,
     flex: 1,
     textAlign: 'center',
+    maxWidth:180,
+    overflow:"visible",
+    writingDirection:"auto"
   },
   btnZodiacText: {
-    width: 67,
+    maxWidth: 100,
     height: 27,
     backgroundColor: ThemeColor.primaryColor,
     borderRadius: 10,
@@ -199,11 +202,14 @@ const styles = StyleSheet.create({
   zodiacText: {
     fontSize: 16,
     color: '#fff',
+    paddingLeft:4,
+    paddingRight:4,
+    overflow:"visible"
   },
   contentContainer: {
     paddingLeft: 30,
     paddingRight: 30,
-    marginTop: 35,
+    marginTop: 0,
   },
   timeLine: {
     flexDirection: 'row',
